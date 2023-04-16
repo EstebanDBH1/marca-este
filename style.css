@@ -123,16 +123,16 @@ main {
   .col-ri {
     flex-direction: column;
     gap: 4rem;
-    font-size: 17px;
+    font-size: 15px;
 
   }
 
   .pr{
-    font-size: 17px;
+    font-size: 15px;
   }
    
   .txt__container{
-     font-size: 17px;
+     font-size: 15px;
      gap: 3rem;
 
 }
