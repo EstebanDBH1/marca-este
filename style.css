@@ -122,7 +122,7 @@ main {
 @media screen and (max-width: 800px) {
   .col-ri {
     flex-direction: column;
-    gap: 7rem;
+    gap: 4rem;
     font-size: 17px;
 
   }
@@ -130,4 +130,9 @@ main {
   .pr{
     font-size: 17px;
   }
+   
+  .txt__container{
+     font-size: 17px;
+}
+
 }
