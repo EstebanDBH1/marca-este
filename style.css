@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Suisse-b;
+  src: url("font/SuisseBPIntl-Antique.woff2");
+}
+
+@font-face {
+  font-family: Suisse-ita;
+  src: url("font/SuisseBPIntl-AntiqueItalic.woff2");
+}
+@font-face {
+  font-family: sans;
+  src: url("font/sans.b49ff1e.woff");
+}
+
+@font-face {
+  font-family: h-n;
+  src: url("font/HelveticaNeueCyr-Roman.woff2");
+}
+
+:root {
+  --bg-color: #fafafa;
+  --color: #1a1a1a;
+  --texto-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color);
+}
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--color);
+  font-family: sans, Helvetica, sans-serif;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container {
+  padding: 10px;
+}
+
+/*==================HEADER================================*/
+
+.col-ri {
+  display: flex;
+  gap: 30%;
+}
+
+.pr {
+  font-size: 19px;
+}
+.menu__lista {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
+  font-family: Suisse-ita;
+}
+
+.txt__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 14px;
+}
+
+.social {
+  display: flex;
+  gap: 5px;
+}
+
+.name {
+  width: 100%;
+  font-size: 23vw;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  line-height: 0.8;
+  font-family: Suisse-ita;
+  text-align: center;
+  color: #212121;
+}
+
+/*==============CUSTOM =====================*/
+.col-ri p{
+  overflow: hidden;
+}
+
+.col-ri p span{
+  display: inline-block;
+}
+
+.social li{
+  overflow: hidden;
+}
+
+.social li a{
+  display: inline-block;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .col-ri {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .pr{
+    font-size: 15px;
+  }
+}
